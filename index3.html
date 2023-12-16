@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="numberBook">
+        <span>How many Books ?</span>
+        <input type="text" name="numberBooks" id="nBook" placeholder="Enter Books number ..">
+        <div class="button">
+            <input type="button" value="OK" id="ok">
+        </div>
+    </div>
+    <div class="parent">
+        <div class="input">
+            <div> <span class="label">Book Name </span> <input type="text" name="Bname" class="name"><span
+                    class="invalidName">name</span></div>
+            <div> <span class="label">Book Price </span> <input type="text" name="price" id="price"> <span
+                    id="invalidPrice">Price</span></div>
+            <div> <span class="label">Author Name </span> <input type="text" name="Aname" class="name"><span
+                    class="invalidName">name</span>
+            </div>
+            <div> <span class="label">Author E-mail </span> <input type="text" name="email" id="email"><span
+                    id="invalidEmail">email</span></div>
+        </div>
+
+        <div class="button">
+            <input type="button" value="Add" id="add">
+            <input type="button" value="Reset" id='reset'>
+        </div>
+        <div id="done">Done!</div>
+  </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Book Price</th>
+                    <th>Author Name</th>
+                    <th>Author E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+  
+
+
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

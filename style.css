@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+body::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.numberBook {
+    position: absolute;
+    top: 35%;
+}
+
+.numberBook span {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: cornsilk;
+}
+
+div.parent,
+.numberBook {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+div.parent span.label {
+    width: 115px;
+    display: inline-block;
+    color: brown;
+    font-weight: bold;
+    background-color: #eeeeee;
+    padding: 4px;
+    border: 2px solid brown;
+    border-radius: 10px;
+
+}
+
+.input input,
+#nBook {
+    width: 250px;
+    padding: 7px 10px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    margin: 20px;
+    color: brown;
+}
+
+.input input,
+#nBook {
+    outline-color: brown;
+}
+
+.input div {
+    position: relative;
+}
+
+.invalidName,
+#invalidPrice,
+#invalidEmail {
+    color: red;
+    display: none;
+    position: absolute;
+    top: 41%;
+}
+
+.button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 80px;
+}
+
+.button input {
+    padding: 7px 10px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    color: brown;
+}
+
+#done {
+    padding: 7px 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    display: none;
+}
+
+.edit,
+.delete ,
+.cancel,
+.save{
+    color: white;
+    padding: 7px 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.edit,
+.cancel {
+    background-color: rgb(31, 46, 131);
+}
+
+.delete {
+    background-color: red;
+}
+
+.save {
+    background-color: green;
+    display: none;
+}
+.cancel{
+    display: none;
+}
+.button input:last-child {
+    margin-left: 147px;
+}
+
+.button input:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* table */
+
+table {
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 2px solid brown;
+    background-color: #eeeeee;
+    color: brown;
+    text-align: center;
+}
+
+th{
+    padding: 5px 50px;
+}
+
+table td input[type="text"]{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    width: 90%;
+    color: rgb(122, 109, 109);
+    outline: none;
+    padding: 5px 0;
+}
+.styleInput{
+    border: 2px dotted brown !important;
+        background-color: #a4a4bb !important;
+            color: white !important;
+}
